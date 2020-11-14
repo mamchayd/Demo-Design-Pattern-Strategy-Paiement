@@ -6,7 +6,7 @@ public class PaiementCarte implements IPaiementStrategy{
 	@Override
 	public double payer(double prix, int quantite) {
 		
-		return prix*quantite*reduction;
+		return (prix*quantite)-(prix*quantite*reduction);
 	}
 
 }

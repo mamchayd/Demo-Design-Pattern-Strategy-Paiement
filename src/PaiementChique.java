@@ -5,7 +5,7 @@ public class PaiementChique implements IPaiementStrategy {
 	@Override
 	public double payer(double prix, int quantite) {
 		// TODO Auto-generated method stub
-		return prix*quantite*reduction;
+		return (prix*quantite)-(prix*quantite*reduction);
 	}
 
 }
